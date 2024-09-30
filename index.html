@@ -8,48 +8,28 @@
     </head>
 
 
-        <style>
-            .menu {
-                background-color: #800080; /* Paarse achtergrondkleur */
-                text-align: center; /* Centraal uitlijnen van de tekst */
-                padding: 10px 0; /* Ruimte boven en onder de menubalk */
-            }
-            .menu ul {
-                list-style-type: none; /* Geen opsommingstekens */
-                padding: 0;
-                margin: 0;
-                display: flex; /* Flexbox om de items te centreren */
-                justify-content: center; /* Items centreren */
-            }
-            .menu li {
-                display: inline; /* Inline om de items naast elkaar te plaatsen */
-                margin: 0 10px; /* Ruimte tussen de items */
-                position: relative; /* Voor de pseudo-elementen */
-            }
-            .menu li:not(:last-child)::after {
-                content: "|"; /* Verticale lijn als scheidingsteken */
-                color: #FFFFFF; /* Witte kleur */
-                position: absolute;
-                right: -15px; /* Plaatsing van de lijn */
-            }
-            .menu a {
-                text-decoration: none; /* Geen onderstreping */
-                color: #FFFFFF; /* Witte tekstkleur */
-            }
-        </style>
-
-
 <body>
     <!-- navigatie html gegenereerd met behulp van Copilot -->
     <nav>
         <ul>
-            <li><a href="#home" id="home">Home</a></li>
-            <li><a href="#over-ons" id="over-ons">Over Ons</a></li>
-            <li><a href="#afleveringen" id="afleveringen">Afleveringen</a></li>
-            <li><a href="#abonneren" id="abonneren">Abonneren</a></li>
+            <li><a onclick="showSection('home')">Home</a></li>
+            <li><a onclick="showSection('about')">Over Ons</a></li>
+            <li><a onclick="showSection('episode')">Afleveringen</a></li>
+            <li><a onclick="showSection('services')">Abonneer</a></li>
         </ul>
     </nav>
     
+    <script>
+        //Script gegenereerd door Copilot
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+            <!-- home page content -->
+        }
+    </script>
     
   
      <!-- content structuur html gegenereerd met behulp van Copilot -->
@@ -82,67 +62,55 @@
             <p>Bezoek onze website voor meer informatie: 
                 <a href="https://jouwlifecastwebsite.com" target="_blank">LIFECAST website</a>
             </p>
-            <p>
+
+            <div class="video-container">
+                <video controls autoplay loop muted>
+                    <source src="images/Dream 12.mp4" type="video/mp4">
+                    Je browser ondersteunt de video tag niet.
+                </video>
+            </div>
             
         </div>
         <!-- einde home page content -->
 
 
         <div id="about" class="section">
-            <h1>Over Ons</h1>
+            <h1>Over ons</h1>
             <p>Dit is de over ons sectie.</p>
             <p>Dit is de inhoud van Lifecast</p>
         </div>
 
         <div id="services" class="section">
-            <h1>Diensten</h1>
+            <h1>Abonneer</h1>
             <p>Dit is de diensten sectie.</p>
         </div>
 
+        <div id="episode" class="section">
+            <h1>Afleveringen</h1>
+            <p>Dit is de diensten sectie.</p>
+            <table> 
+                    <tr>
+                    <td><img src="../Podcast-Lifecast/images/Thumnail podcast.jpg" alt=""></td>
+                    <h1>#1 Introductie</h1>            
+                    <td><img src="../Podcast-Lifecast/images/Thumnail podcast.jpg" alt=""></td>
+                    <h1>#2 School verhalen</h1>
+                    <td><img src="../Podcast-Lifecast/images/Thumnail podcast.jpg" alt=""></td>
+                    <h1>#3 Dieren verhalen</h1>
+                </tr>
+                <tr>
+                <td><img src="../Podcast-Lifecast/images/Thumnail podcast.jpg" alt="Aflevering 1: Introduction"></td>
+                    <h1>#4 Family drama</h1>
+                <td><img src="../Podcast-Lifecast/images/Thumnail podcast.jpg" alt="Aflevering 1: Introduction"></td>
+                    <h1>#5 Wraak verhalen</h1>
+                <td><img src="../Podcast-Lifecast/images/Thumnail podcast.jpg" alt="Aflevering 1: Introduction"></td>
+                    <h1>#6 Vrienden drama</h1>
+                </tr>
+            </table>
+        
+        </div>
     </div>
 
    
-</body>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>logo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .header {
-            background-color: #b479b5;
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
-        .video-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
-            margin: 0;
-        }
-        video {
-            width: 80%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-    </div>
-    <div class="video-container">
-        <video controls autoplay loop muted>
-            <source src="images/Dream 12.mp4" type="video/mp4">
-            Je browser ondersteunt de video tag niet.
-        </video>
-    </div>
 </body>
 </html>
 
