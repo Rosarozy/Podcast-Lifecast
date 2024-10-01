@@ -131,3 +131,69 @@ video {
 }
   
 
+
+
+
+
+.subscribe-section {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.newsletter-form {
+  margin-top: 20px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9a6e9a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #821779;
+}
+
+.subscribe-button {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+.qr-code {
+  margin-top: 20px;
+}
+
+.qr-code img {
+  width: 100px;
+  height: 100px;
+}

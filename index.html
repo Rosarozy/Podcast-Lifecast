@@ -18,6 +18,7 @@
             <li><a onclick="showSection('services')">Abonneer</a></li>
         </ul>
     </nav>
+
     
     <script>
         //Script gegenereerd door Copilot
@@ -33,6 +34,7 @@
     
   
      <!-- content structuur html gegenereerd met behulp van Copilot -->
+
     <div class="content">
 
         <!-- home page content -->
@@ -73,25 +75,56 @@
         </div>
         <!-- einde home page content -->
 
-
+        <!-- over ons sectie -->
         <div id="about" class="section">
             <h1>Over ons</h1>
-            <p>Dit is de over ons sectie.</p>
-            <p>Dit is de inhoud van Lifecast</p>
+            <td><img src="../Podcast-Lifecast/images/foto Anneke - kopie.jpg" alt="foto Anneke"></td>
+            <p>Ik ben Anneke Slagter,
+ 
+                Ik ben 21 jaar en een nieuwsgierig type met een nog beter gevoel voor humor. 
+                Ik kijk altijd eerst rustig om me heen voordat ik wat zeg, en dat zorgt vaak voor verrassende inzichten. 
+                Met mijn kritische blik op de wereld weet ik dat een flinke portie humor het leven een stuk makkelijker maakt.
+                 En eerlijk is eerlijk, als iemand valt, moet ik eerst lachen voordat ik check of alles oké is.</p>
+            </p>
         </div>
-
+        <!-- abonneer sectie -->   
         <div id="services" class="section">
             <h1>Abonneer</h1>
-            <p>Dit is de diensten sectie.</p>
-        </div>
+            <div class="subscribe-section">
+                <h2>Abonneer op ons kanaal</h2>
+                <div class="social-links">
+                    <img src="../Podcast-Lifecast/images/QR code op ons socials.png" alt="CR Code">
+                    <img src="../Podcast-Lifecast/images/Spotify paars.png" alt="Spotify">
+                    <a href="https://open.spotify.com/show/5QGuXp0114tLdCVDmYZT0Q" target="_blank">Spotify</a>
+                    <img src="../Podcast-Lifecast/images/Youtube.jpg" alt="">
+                    <a href="https://www.youtube.com/channel/UC123456789" target="_blank">YouTube</a>
+                    <img src="../Podcast-Lifecast/images/Instagram paars.jpg" alt="">
+                    <a href="https://www.instagram.com/lifecast" target="_blank">Instagram</a>
+                </div>
+                <div>
 
+                </div>
+                <form class="newsletter-form">
+                    <label for="email">Schrijf je in voor onze wekelijkse nieuwsbrief:</label>
+                    <input type="email" id="email" name="email" placeholder="Je e-mailadres">
+                    <button type="submit" class="subscribe-button">Abonneer</button>
+                </form>
+            </div>
+            </div>
+            
+        <!-- aflevering sectie -->
         <div id="episode" class="section">
             <h1>Afleveringen</h1>
             <p>Dit is de diensten sectie.</p>
             <table> 
                     <tr>
                     <td><img src="../Podcast-Lifecast/images/Thumnail podcast.jpg" alt=""></td>
-                    <h1>#1 Introductie</h1>            
+                    <h1>#1 Introductie</h1> 
+                    <div class="episodes-container">Introductie</div>   
+                    <div class="episode-card">episode episode-info</div> 
+                    <p>#1 Introductie</p>
+                <button class="play-button" onclick="playAudio('audio1')">Play</button> 
+
                     <td><img src="../Podcast-Lifecast/images/Thumnail podcast.jpg" alt=""></td>
                     <h1>#2 School verhalen</h1>
                     <td><img src="../Podcast-Lifecast/images/Thumnail podcast.jpg" alt=""></td>
@@ -114,3 +147,7 @@
 </body>
 </html>
 
+  
+
+
+  
