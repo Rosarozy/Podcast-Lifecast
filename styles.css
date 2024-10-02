@@ -2,16 +2,23 @@ body {
   background-color: white;
   color: rgb(28, 24, 24);
   font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+ 
 }
 
 h1 {
   color: rgb(100, 44, 100);
-  margin-left: 10%;
+  margin-left: 0,5%;
   font-family: Amaranth;
+  container 
+ 
+ 
+  
 }
 
 p {
-  font-size: medium;
+  font-size: 2em;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(102, 29, 111);
   width: 80%;
@@ -188,12 +195,68 @@ video {
   }
 }
 
-
-.qr-code {
-  margin-top: 20px;
+#videoMetGeluid {
+  text-align: center;
+  margin-top: 10px;
 }
 
-.qr-code img {
-  width: 100px;
-  height: 100px;
+video {
+  display: block;
+  margin: 0 auto;
+}
+
+audio {
+  display: none; /* Verberg het audio-element */
+}
+
+a {
+  color: rgb(184, 120, 157);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(122, 84, 138);
+  text-decoration: underline;
+}
+/* Heel de websit */
+.container {
+  text-align: center;
+}
+h1 {
+  font-size: 3em; /* Pas de grootte aan naar wens */
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Lijnt de inhoud links uit */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%; /* Zorgt ervoor dat de tekst niet te breed wordt */
+}
+.content table {
+      width: 80%;
+      inline-size: 20%;
+    border: none;
+  }
+
+.content p {
+  font-size: 2em; /* Pas de grootte aan naar wens */
+  margin: 10px 0; /* Ruimte tussen de paragrafen */
+}
+.content h2{
+  text-align: center;
+  font-size: 3em;
+}
+.audio-image-container {
+  text-align: center; /* Centreert de inhoud */
+  margin: 20px; /* Voegt wat ruimte rondom de container toe */
+}
+.audio-image-container img {
+  display: block;
+  margin: 0 auto; /* Centreert de afbeelding */
+}
+.audio-image-container audio {
+  display: block;
+  margin: 10px auto; /* Centreert de audio en voegt wat ruimte toe */
 }
