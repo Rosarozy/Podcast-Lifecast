@@ -4,32 +4,25 @@ body {
   font-family: Arial, sans-serif;
   width: 100%;
   height: 100%;
- 
+
 }
 
 h1 {
   color: rgb(100, 44, 100);
-  margin-left: 0,5%;
   font-family: Amaranth;
-  container 
- 
- 
-  
 }
 
 p {
   font-size: 2em;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(102, 29, 111);
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
+  margin: 10%;
 }
 
 /* Table styling */
 table {
   width: 80%;
-  color: #6ea63e;
-  inline-size: 20%;
   border: none;
 }
 
@@ -39,7 +32,7 @@ nav {
   color: white;
   padding: 10px;
 }
-
+/*unordered list style*/
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -47,26 +40,16 @@ nav ul {
   display: flex;
   justify-content: center;
 }
-
+/*Item in the list: menu opties*/
 nav ul li {
+  font-size: 2em;
   margin-right: 20px;
   display: inline;
   position: relative;
-  padding: 10px 20px;
+  padding: 20px;
   cursor: pointer;
 }
-
-nav ul li:not(:last-child):after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 20px;
-  background-color: #FFFFFF;
-}
-
+/*hyper link style*/
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -74,12 +57,12 @@ nav ul li a {
   display: inline-block;
   border: none;
 }
-
+/*hyperlink style als je met muis over heen beweegt*/
 nav ul li a:hover {
   background-color: #5a2d82;
   color: black;
 }
-
+/*style van geslecteerde menu optie: als de link actief is*/
 nav ul li a:active {
   background-color: #5a2d82;
   color: black;
@@ -88,8 +71,38 @@ nav ul li a:active {
 /* Content and section styles */
 .content {
   padding: 20px;
-}
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+    /* Lijnt de inhoud links uit */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    /* Zorgt ervoor dat de tekst niet te breed wordt */
+  }
+  .content img {
+height: auto; 
+width:400px;
+  }
+  .content table {
+    width: 80%;
+    inline-size: 20%;
+    border: none;
+  }
+  
+  .content p {
+    font-size: 2em;
+    /* Pas de grootte aan naar wens */
+    margin: 10px 0;
+    /* Ruimte tussen de paragrafen */
+  }
+  
+  .content h2 {
+    text-align: center;
+    font-size: 3em;
+  }
+  
+/*content tonen op basis van menu keuze*/
 .section {
   display: none;
 }
@@ -102,19 +115,14 @@ nav ul li a:active {
 #interactive-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #6200ea;
+  background-color: #9374c0;
   color: #fff;
   border: none;
   cursor: pointer;
 }
 
-#interactive-button.clicked {
-  background-image: url('dark-horse.png');
-  background-size: cover;
-  color: transparent;
-}
 
-/* Mouse icon styling */
+/* Mouse icon styling: geeft hanje aan */
 #mouse-icon {
   display: none;
 }
@@ -135,12 +143,21 @@ nav ul li a:active {
 video {
   width: 80%;
   height: auto;
-}
   
+  
+}
+
+#videoMetGeluid {
+  text-align: center;
+  margin-top: 10px;
+}
 
 
 
-
+audio {
+  display: none;
+  /* Verberg het audio-element */
+}
 
 .subscribe-section {
   margin-top: 20px;
@@ -153,7 +170,11 @@ video {
   text-decoration: none;
   font-size: 1.2em;
 }
+.social-links img {
+  height: auto;
+  width: 200px;
 
+}
 .newsletter-form {
   margin-top: 20px;
 }
@@ -181,82 +202,4 @@ video {
 
 .subscribe-button {
   animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-  0% {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(1.1);
-  }
-  100% {
-      transform: scale(1);
-  }
-}
-
-#videoMetGeluid {
-  text-align: center;
-  margin-top: 10px;
-}
-
-video {
-  display: block;
-  margin: 0 auto;
-}
-
-audio {
-  display: none; /* Verberg het audio-element */
-}
-
-a {
-  color: rgb(184, 120, 157);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  color: rgb(122, 84, 138);
-  text-decoration: underline;
-}
-/* Heel de websit */
-.container {
-  text-align: center;
-}
-h1 {
-  font-size: 3em; /* Pas de grootte aan naar wens */
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Lijnt de inhoud links uit */
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%; /* Zorgt ervoor dat de tekst niet te breed wordt */
-}
-.content table {
-      width: 80%;
-      inline-size: 20%;
-    border: none;
-  }
-
-.content p {
-  font-size: 2em; /* Pas de grootte aan naar wens */
-  margin: 10px 0; /* Ruimte tussen de paragrafen */
-}
-.content h2{
-  text-align: center;
-  font-size: 3em;
-}
-.audio-image-container {
-  text-align: center; /* Centreert de inhoud */
-  margin: 20px; /* Voegt wat ruimte rondom de container toe */
-}
-.audio-image-container img {
-  display: block;
-  margin: 0 auto; /* Centreert de afbeelding */
-}
-.audio-image-container audio {
-  display: block;
-  margin: 10px auto; /* Centreert de audio en voegt wat ruimte toe */
 }
