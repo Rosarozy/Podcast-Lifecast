@@ -11,6 +11,7 @@ h1 {
   color: rgb(100, 44, 100);
   font-family: Amaranth;
   
+  
 }
 
 p {
@@ -70,7 +71,7 @@ nav ul li a:active {
 }
 
 /* Content and section styles */
-.content {
+.content  {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -96,11 +97,15 @@ width:400px;
     /* Pas de grootte aan naar wens */
     margin: 10px 0;
     /* Ruimte tussen de paragrafen */
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .content h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 5em;
   }
   
 /*content tonen op basis van menu keuze*/
@@ -205,3 +210,78 @@ audio {
   animation: pulse 1s infinite;
 }
 
+.section {
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.kanalen {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.kanaal {
+  text-align: center;
+}
+
+.kanaal img {
+  width: 50px;
+  height: 50px;
+}
+
+.kanaal p {
+  margin-top: 10px;
+}
+
+.qr-code img {
+  width: 150px;
+  height: 150px;
+}
+
+
+.icons a {
+  margin: 10px;
+  display: inline-block;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+}
+
+a {
+  color: #3498db; /* Kleur van de link */
+  text-decoration: none; /* Verwijdert de onderstreping */
+}
+
+a:hover {
+  color: #2ecc71; /* Kleur van de link bij hover */
+  text-decoration: underline; /* Onderstreping bij hover */
+}
