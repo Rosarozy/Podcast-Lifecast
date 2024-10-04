@@ -1,14 +1,14 @@
 body {
 
-  background-color: white;
+    background-color: white;
 
-  color: rgb(28, 24, 24);
+    color: rgb(28, 24, 24);
 
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 
-  width: 100%;
+    width: 100%;
 
-  height: 100%;
+    height: 100%;
 
 
 
@@ -18,9 +18,9 @@ body {
 
 h1 {
 
-  color: rgb(100, 44, 100);
-  font-family: Amaranth;
-  text-align: left;
+    color: rgb(100, 44, 100);
+    font-family: Amaranth;
+    text-align: left;
 
 }
 
@@ -28,15 +28,15 @@ h1 {
 
 p {
 
-  font-size: 2em;
+    font-size: 2em;
 
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
-  color: rgb(102, 29, 111);
+    color: rgb(102, 29, 111);
 
-  width: 100%;
+    width: 100%;
 
-  margin: 10%;
+    margin: 10%;
 
 }
 
@@ -46,13 +46,13 @@ p {
 
 table {
 
-  width: 80%;
+    width: 80%;
 
-  border: none;
+    border: none;
 
-  margin-left: auto;
+    margin-left: auto;
 
-  margin-right: auto;
+    margin-right: auto;
 
 }
 
@@ -62,11 +62,11 @@ table {
 
 nav {
 
-  background-color: #90169b;
+    background-color: #90169b;
 
-  color: white;
+    color: white;
 
-  padding: 10px;
+    padding: 10px;
 
 }
 
@@ -74,15 +74,15 @@ nav {
 
 nav ul {
 
-  list-style-type: none;
+    list-style-type: none;
 
-  margin: 0;
+    margin: 0;
 
-  padding: 0;
+    padding: 0;
 
-  display: flex;
+    display: flex;
 
-  justify-content: center;
+    justify-content: center;
 
 }
 
@@ -90,17 +90,17 @@ nav ul {
 
 nav ul li {
 
-  font-size: 2em;
+    font-size: 2em;
 
-  margin-right: 20px;
+    margin-right: 20px;
 
-  display: inline;
+    display: inline;
 
-  position: relative;
+    position: relative;
 
-  padding: 20px;
+    padding: 20px;
 
-  cursor: pointer;
+    cursor: pointer;
 
 }
 
@@ -108,15 +108,15 @@ nav ul li {
 
 nav ul li a {
 
-  color: white;
+    color: white;
 
-  text-decoration: none;
+    text-decoration: none;
 
-  padding: 10px;
+    padding: 10px;
 
-  display: inline-block;
+    display: inline-block;
 
-  border: none;
+    border: none;
 
 }
 
@@ -124,9 +124,9 @@ nav ul li a {
 
 nav ul li a:hover {
 
-  background-color: #5a2d82;
+    background-color: #5a2d82;
 
-  color: black;
+    color: black;
 
 }
 
@@ -134,9 +134,9 @@ nav ul li a:hover {
 
 nav ul li a:active {
 
-  background-color: #5a2d82;
+    background-color: #5a2d82;
 
-  color: black;
+    color: black;
 
 }
 
@@ -144,41 +144,41 @@ nav ul li a:active {
 
 .content {
 
-  padding: 20px;
+    padding: 20px;
 
-  display: flex;
+    display: flex;
 
-  flex-direction: column;
+    flex-direction: column;
 
-  align-items: flex-start;
+    align-items: flex-start;
 
-  /* Lijnt de inhoud links uit */
+    /* Lijnt de inhoud links uit */
 
-  margin-left: auto;
+    margin-left: auto;
 
-  margin-right: auto;
+    margin-right: auto;
 
-  max-width: 80%;
+    max-width: 80%;
 
-  /* Zorgt ervoor dat de tekst niet te breed wordt */
+    /* Zorgt ervoor dat de tekst niet te breed wordt */
 
 }
 
 .content img {
 
-  height: auto;
+    height: auto;
 
-  width: 400px;
+    width: 400px;
 
 }
 
 .content table {
 
-  width: 80%;
+    width: 80%;
 
-  inline-size: 20%;
+    inline-size: 20%;
 
-  border: none;
+    border: none;
 
 }
 
@@ -186,45 +186,45 @@ nav ul li a:active {
 
 .content p {
 
-  font-size: 2em;
+    font-size: 2em;
 
-  /* Pas de grootte aan naar wens */
+    /* Pas de grootte aan naar wens */
 
-  margin: 10px 0;
+    margin: 10px 0;
 
-  /* Ruimte tussen de paragrafen */
+    /* Ruimte tussen de paragrafen */
 
-  text-align: center;
+    text-align: center;
 
-  margin-left: auto;
+    margin-left: auto;
 
-  margin-right: auto;
+    margin-right: auto;
 
 }
 
 
 .content h2 {
-  color: rgb(100, 44, 100);
-  text-align: center;
-  font-family: Amaranth;
-  font-size: 3em;
+    color: rgb(100, 44, 100);
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 3em;
 }
 
 .content h3 {
-  color: rgb(100, 44, 100);
-  text-align: center;
-  font-family: Amaranth;
-  font-size: 2em;
+    color: rgb(100, 44, 100);
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 2em;
 }
 
 
 /*home page styles, afwijkend van andere pagina's*/
 .hometext p {
-  text-align: left;
+    text-align: left;
 }
 
 .hometext a {
-  color: rgb(100, 44, 100);
+    color: rgb(100, 44, 100);
 }
 
 
@@ -232,14 +232,14 @@ nav ul li a:active {
 
 .section {
 
-  display: none;
+    display: none;
 
 }
 
 
 .section.active {
 
-  display: block;
+    display: block;
 
 }
 
@@ -249,17 +249,17 @@ nav ul li a:active {
 
 #interactive-button {
 
-  display: inline-block;
+    display: inline-block;
 
-  padding: 10px 20px;
+    padding: 10px 20px;
 
-  background-color: #9374c0;
+    background-color: #9374c0;
 
-  color: #fff;
+    color: #fff;
 
-  border: none;
+    border: none;
 
-  cursor: pointer;
+    cursor: pointer;
 
 }
 
@@ -271,7 +271,7 @@ nav ul li a:active {
 
 #mouse-icon {
 
-  display: none;
+    display: none;
 
 }
 
@@ -279,7 +279,7 @@ nav ul li a:active {
 
 #mouse-icon.visible {
 
-  display: inline-block;
+    display: inline-block;
 
 }
 
@@ -289,15 +289,15 @@ nav ul li a:active {
 
 .video-container {
 
-  display: flex;
+    display: flex;
 
-  justify-content: center;
+    justify-content: center;
 
-  align-items: center;
+    align-items: center;
 
-  height: 80vh;
+    height: 80vh;
 
-  margin: 0;
+    margin: 0;
 
 }
 
@@ -305,9 +305,9 @@ nav ul li a:active {
 
 video {
 
-  width: 80%;
+    width: 80%;
 
-  height: auto;
+    height: auto;
 
 }
 
@@ -315,9 +315,9 @@ video {
 
 #videoMetGeluid {
 
-  text-align: center;
+    text-align: center;
 
-  margin-top: 10px;
+    margin-top: 10px;
 
 }
 
@@ -325,9 +325,9 @@ video {
 
 audio {
 
-  display: none;
+    display: none;
 
-  /* Verberg het audio-element */
+    /* Verberg het audio-element */
 
 }
 
@@ -335,53 +335,47 @@ audio {
 
 .subscribe-section {
 
-  margin-top: 20px;
+    margin-top: 20px;
 
 }
 
 
 .social-links a {
 
-  display: inline-block;
-
-  margin: 0 10px;
-
-  color: white;
-
-  text-decoration: none;
-
-  font-size: 1.2em;
-
+    display: inline-block;
+    margin: 10px;
+    color: rgb(100, 44, 100);
+    /*text-decoration: none; */
 }
 
 .social-links img {
+    height: auto;
+    width: 200px;
+}
 
-  height: auto;
-
-  width: 200px;
-
+.social-links h4 {
+    font-size: 1.4em;
+    text-align: left;
 }
 
 .newsletter-form {
-
-  margin-top: 20px;
-
+    margin-top: 20px;
 }
 
 
 .newsletter-form label {
-  font-size: 1.4em;
+    font-size: 1.4em;
 }
 
 .newsletter-form input {
 
-  padding: 10px;
+    padding: 10px;
 
-  margin-right: 10px;
+    margin-right: 10px;
 
-  border-radius: 5px;
+    border-radius: 5px;
 
-  font-size: 1.4em;
+    font-size: 1.4em;
 
 }
 
@@ -389,27 +383,27 @@ audio {
 
 .newsletter-form button {
 
-  padding: 10px 20px;
+    padding: 10px 20px;
 
-  border: none;
+    border: none;
 
-  border-radius: 5px;
+    border-radius: 5px;
 
-  background-color: #9a6e9a;
+    background-color: #9a6e9a;
 
-  color: white;
+    color: white;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 
-  font-size: 1.4em;
+    font-size: 1.4em;
 
 }
 
 
 .newsletter-form button:hover {
 
-  background-color: #821779;
+    background-color: #821779;
 
 }
