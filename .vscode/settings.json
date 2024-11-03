@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "https://github.com/Rosarozy/mobiele-html-app-.git": true
+    },
+    "search.exclude": {
+        "https://github.com/Rosarozy/mobiele-html-app-.git": true
+    },
+    "search.useGlobalIgnoreFiles": true,
+    "search.useParentIgnoreFiles": true
+}
