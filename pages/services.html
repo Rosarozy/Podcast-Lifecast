@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="../styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" rel="stylesheet" />
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abonneer</title>
 </head>
+
 <body>
-    <div class="menucontainer">
+    <header class="menu-container">
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -16,29 +18,27 @@
                 <li><a href="../pages/services.html" class="active">Abonneer</a></li>
             </ul>
         </nav>
-    </div>
-    <!--bonneer sectie -->
+    </header>
 
-    <div class="content">
+    <main class="content-container">
         <h2>Abonneer op ons kanaal</h2>
 
-        <div class="video-container">
+        <section class="video-container">
             <video controls autoplay loop muted>
                 <source src="../images/Dream12.mp4" type="video/mp4">
                 Je browser ondersteunt de video tag niet.
             </video>
-    </div>
+        </section>
 
-        <div class="newsletter-form">
+        <section class="newsletter-form">
             <form>
                 <label for="email">Schrijf je in voor onze wekelijkse nieuwsbrief:</label>
                 <input type="email" id="email" name="email" placeholder="Je e-mailadres">
                 <button type="submit" class="subscribe-button">Abonneer</button>
             </form>
-        
-        </div>
+        </section>
 
-        <div class="social-links">
+        <section class="social-links">
             <h4>Volg ons via onze social kanalen</h4>
             <a href="https://www.spotify.com/show/5QGuXp0114tLdCVDmYZT0Q" target="_blank">
                 <img src="../images/Spotify paars.png" alt="Spotify">
@@ -57,9 +57,8 @@
 
             <h4>Of scan de QR Code om ons te volgen</h4>
             <img src="../images/QR code op ons socials.png" alt="QR Code">
-        </div>
-    </div>
-</div>
-
+        </section>
+    </main>
 </body>
+
 </html>

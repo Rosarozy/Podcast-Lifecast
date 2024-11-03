@@ -6,21 +6,7 @@ body {
     height: 100%;
 }
 
-h1 {
-    color: rgb(100, 44, 100);
-    font-family: Amaranth;
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Centreert de tekst in de div */
-}
-
-
-h2 {
-    text-align: center;
-}
-
+/*Kleur en breedte van alle tekst paragrafen*/
 p {
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif sans-serif;
@@ -29,97 +15,103 @@ p {
     margin: 10%;
 }
 
-/* nieuw css versie 2 */
+/* Mouse icon styling: geeft hanje aan */
+#mouse-icon {
+    display: none;
+}
+
+#mouse-icon.visible {
+    display: inline-block;
+}
 
 /*Flexbox Video/Grid container styling */
-.flexcontainer {
+.flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.flexitem {
+.flex-item {
     flex: 1 1 30%;
     margin: 5px;
     box-sizing: border-box;
 }
 
-.flexitem img {
+.flex-item img {
     max-width: 100%;
     height: auto;
 }
 
 /* Navigation styling */
-.menucontainer {
+.menu-container {
+
+    justify-content: space-between;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
 
 }
 
 /*getoonde pagina onderstrepen in menu */
-.menucontainer a.active {
+.menu-container a.active {
     background-color: white;
     color: #90169b;
 }
 
 /*menu layout*/
-nav {
+.menu-container nav {
 
-    display: flex;
     background-color: #90169b;
     color: white;
     padding: 10px;
+    width: 100%;
 
 }
 
 /*unordered list style*/
-nav ul {
+.menu-container ul {
 
+    display: flex;
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    justify-content: center;
 
 }
 
 /*Item in the list: menu opties*/
-nav ul li {
+.menu-container li {
 
+    flex: 1;
+    /* Zorg ervoor dat elk lijstitem dezelfde breedte heeft */
+    text-align: center;
+    /* Center de tekst van de menu-items */
     font-size: 2em;
-    margin-right: 20px;
-    display: inline;
-    position: relative;
-    padding: 20px;
-    cursor: pointer;
 
 }
 
 /*hyperlink in menu style*/
-nav ul li a {
+.menu-container a {
     color: white;
     text-decoration: none;
     padding: 10px;
-    display: inline-block;
+    display: block;
     border: none;
 }
 
 /*hyperlink in menu style als je met muis over heen beweegt*/
-nav ul li a:hover {
-    background-color: white;
+.menu-container a:hover {
+    background-color: rgb(235, 190, 226);
     color: #90169b;
 }
 
 /*style van geslecteerde menu optie: als de link actief is*/
-nav ul li a:active {
+.menu-container a:active {
     background-color: #5a2d82;
     color: black;
 }
 
-
 /* Content and section styles */
-.content {
+.content-container {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -129,18 +121,18 @@ nav ul li a:active {
     margin-right: auto;
     max-width: 80%;
     /* Zorgt ervoor dat de tekst niet te breed wordt */
-    text-align: center; /* Hiermee centreer je de tekst */
-    margin: 0 auto;   
+    text-align: center;
+    /* Hiermee centreer je de tekst */
+    margin: 0 auto;
     /* Zorg ervoor dat de body en html de volledige hoogte beslaan */
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Centreert de tekst in de div */
+    text-align: center;
+    /* Centreert de tekst in de div */
 }
 
-
-
-.content p {
+.content-container p {
     font-size: 2em;
     /* Past de grootte van de tekst aan naar wens */
     margin: 10px 0;
@@ -152,35 +144,46 @@ nav ul li a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Centreert de tekst in de div */
+    text-align: center;
+    /* Centreert de tekst in de div */
 }
 
-
-
-.content h2 {
+.content-container h1 {
     color: rgb(100, 44, 100);
     font-family: Amaranth;
     font-size: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Centreert de tekst in de div */
+    text-align: center;
+    /* Centreert de tekst in de div */
 }
 
-.content h3 {
+.content-container h2 {
+    color: rgb(100, 44, 100);
+    font-family: Amaranth;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Centreert de tekst in de div */
+}
+
+.content-container h3 {
     color: rgb(100, 44, 100);
     text-align: center;
     font-family: Amaranth;
     font-size: 2em;
-    
+
 }
 
 /*home page styles, afwijkend van andere pagina's*/
-.hometext p {
+.home-text p {
     text-align: left;
 }
 
-.hometext a {
+.home-text a {
     color: rgb(100, 44, 100);
 }
 
@@ -210,44 +213,10 @@ video {
     /* Maakt ruimte aan de boven- en onderkant van de afbeelding */
 }
 
-.logo {
+.logo-container img {
     max-width: 50%;
     height: auto;
 }
-
-
-/* Button styling */
-
-#interactive-button {
-
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #9374c0;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-
-}
-
-
-
-/* Mouse icon styling: geeft hanje aan */
-#mouse-icon {
-    display: none;
-}
-
-#mouse-icon.visible {
-    display: inline-block;
-}
-
-
-
-.subscribe-section {
-
-    margin-top: 20px;
-
-}
-
 
 .social-links a {
     display: inline-block;
@@ -258,7 +227,6 @@ video {
 .social-links a:hover {
     color: rgb(199, 168, 28);
 }
-
 
 .social-links img {
     height: auto;
@@ -271,13 +239,13 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Centreert de tekst in de div */
+    text-align: center;
+    /* Centreert de tekst in de div */
 }
 
 .newsletter-form {
     margin-top: 20px;
 }
-
 
 .newsletter-form label {
     font-size: 1.4em;
@@ -289,8 +257,6 @@ video {
     border-radius: 5px;
     font-size: 1.4em;
 }
-
-
 
 .newsletter-form button {
 
@@ -305,11 +271,6 @@ video {
 
 }
 
-
 .newsletter-form button:hover {
-
     background-color: #821779;
-
 }
-
-
