@@ -4,15 +4,41 @@ body {
     font-family: Arial, sans-serif;
     width: 100%;
     height: 100%;
+    text-align: left;
 }
 
 /*Kleur en breedte van alle tekst paragrafen*/
 p {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif sans-serif;
     color: rgb(102, 29, 111);
-    width: 100%;
-    margin: 10%;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    /* Centreert de tekst in de div */
+}
+
+a {
+    color: rgb(100, 44, 100);
+}
+
+
+h1 {
+    color: rgb(100, 44, 100);
+    font-family: Amaranth;
+    font-size: 3em;
+    text-align: center;
+    /* Centreert de tekst in de div */
+}
+
+h2 {
+    color: rgb(100, 44, 100);
+    font-family: Amaranth;
+    font-size: 2em;
+    text-align: left;
 }
 
 /* Mouse icon styling: geeft hanje aan */
@@ -24,31 +50,11 @@ p {
     display: inline-block;
 }
 
-/*Flexbox Video/Grid container styling */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.flex-item {
-    flex: 1 1 30%;
-    margin: 5px;
-    box-sizing: border-box;
-}
-
-.flex-item img {
-    max-width: 100%;
-    height: auto;
-}
-
 /* Navigation styling */
 .menu-container {
-
     justify-content: space-between;
     width: 100%;
     display: flex;
-
 }
 
 /*getoonde pagina onderstrepen in menu */
@@ -59,32 +65,26 @@ p {
 
 /*menu layout*/
 .menu-container nav {
-
     background-color: #90169b;
     color: white;
     padding: 10px;
     width: 100%;
-
 }
 
 /*unordered list style*/
 .menu-container ul {
-
     display: flex;
     width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-
 }
 
 /*Item in the list: menu opties*/
 .menu-container li {
-
     flex: 1;
     /* Zorg ervoor dat elk lijstitem dezelfde breedte heeft */
     text-align: center;
-    /* Center de tekst van de menu-items */
     font-size: 2em;
 
 }
@@ -113,61 +113,11 @@ p {
 /* Content and section styles */
 .content-container {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* Lijnt de inhoud links uit */
+    display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
-    /* Zorgt ervoor dat de tekst niet te breed wordt */
     text-align: center;
-    /* Hiermee centreer je de tekst */
-    margin: 0 auto;
-    /* Zorg ervoor dat de body en html de volledige hoogte beslaan */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* Centreert de tekst in de div */
-}
-
-.content-container p {
-    font-size: 2em;
-    /* Past de grootte van de tekst aan naar wens */
-    margin: 10px 0;
-    /* Ruimte tussen de paragrafen */
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    /* Zorg ervoor dat de body en html de volledige hoogte beslaan */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* Centreert de tekst in de div */
-}
-
-.content-container h1 {
-    color: rgb(100, 44, 100);
-    font-family: Amaranth;
-    font-size: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* Centreert de tekst in de div */
-}
-
-.content-container h2 {
-    color: rgb(100, 44, 100);
-    font-family: Amaranth;
-    font-size: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* Centreert de tekst in de div */
 }
 
 .content-container h3 {
@@ -175,16 +125,28 @@ p {
     text-align: center;
     font-family: Amaranth;
     font-size: 2em;
-
 }
 
-/*home page styles, afwijkend van andere pagina's*/
-.home-text p {
-    text-align: left;
+.link-container {
+    text-align: center;
 }
 
-.home-text a {
-    color: rgb(100, 44, 100);
+/*Flexbox Video/Grid container styling */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    flex: 1 1 30%;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.flex-item img {
+    max-width: 100%;
+    height: auto;
 }
 
 /*Animatie video bloem style*/
@@ -202,25 +164,36 @@ video {
 }
 
 .logo-container {
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
-    height: auto;
-    background-color: white;
     padding: 20px 0;
-    /* Maakt ruimte aan de boven- en onderkant van de afbeelding */
+    /* Ruimte rond het logo */
+    background-color: rgb(255, 255, 255);
+    max-width: 50%;
+    /* Past de breedte aan tot 50% van de container */
+    height: auto;
 }
 
-.logo-container img {
-    max-width: 50%;
-    height: auto;
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    /* Stapel items verticaal */
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    /* Ruimte tussen de items */
 }
 
 .social-links a {
-    display: inline-block;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    /* Plaats afbeelding en tekst onder elkaar */
+    align-items: center;
+    text-decoration: none;
+    /* Verwijder onderstreping */
     color: rgb(100, 44, 100);
 }
 
@@ -229,18 +202,19 @@ video {
 }
 
 .social-links img {
-    height: auto;
     width: 200px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.social-links h4 {
-    font-size: 1.4em;
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social-links h2 {
     text-align: center;
-    /* Centreert de tekst in de div */
+    margin-bottom: 20px;
+    /* Ruimte onder de titel */
+    border-top: 2px solid rgb(100, 44, 100);
+    /* Lijn boven de tekst */
+    padding-top: 10px;
+    /* Ruimte tussen de tekst en de lijn */
 }
 
 .newsletter-form {
@@ -259,16 +233,13 @@ video {
 }
 
 .newsletter-form button {
-
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     background-color: #9a6e9a;
     color: white;
     cursor: pointer;
-    /*transition: background-color 0.3s ease;*/
     font-size: 1.4em;
-
 }
 
 .newsletter-form button:hover {
